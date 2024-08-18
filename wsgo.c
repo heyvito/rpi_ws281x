@@ -58,9 +58,10 @@ int wsgo_set_color(void *rawState, uint8_t r, uint8_t g, uint8_t b, uint8_t brig
     wsgo_state_t *state = (wsgo_state_t *)rawState;
     state->leds.channel[0].brightness = brightness;
     ws2811_led_t color = 0x00;
-    color |= g << 8;
-    color |= b << 16;
-    color |= r << 24;
+    color |= r << 8;
+    color |= g << 16;
+    color |= b << 24;
+
     for (size_t i = 0; i < (size_t)state->leds.channel[0].count; i++) {
         state->leds.channel[0].leds[i] = color;
     }
