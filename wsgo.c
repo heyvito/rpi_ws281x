@@ -20,7 +20,7 @@ int wsgo_init(int leds, int gpio, void **stateOut) {
                             .gpionum = gpio,
                             .invert = 0,
                             .count = leds,
-                            .strip_type = 0x00080010,
+                            .strip_type = WS2811_STRIP_RGB,
                             .brightness = 255,
                             .leds = calloc(leds, sizeof(ws2811_led_t)),
                     },
