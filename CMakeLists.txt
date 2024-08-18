@@ -28,6 +28,7 @@ set(LIB_PUBLIC_HEADERS
     gpio.h
     mailbox.h
     pcm.h
+    wsgo.h
 )
 
 set(LIB_SOURCES
@@ -37,6 +38,7 @@ set(LIB_SOURCES
     pcm.c
     dma.c
     rpihw.c
+    wsgo.c
 )
 
 set(TEST_SOURCES

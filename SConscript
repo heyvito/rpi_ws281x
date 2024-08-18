@@ -40,6 +40,7 @@ lib_srcs = Split('''
     pcm.c
     dma.c
     rpihw.c
+    wsgo.c
 ''')
 
 version_hdr = tools_env.Version('version')

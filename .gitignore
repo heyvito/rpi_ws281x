@@ -11,3 +11,4 @@ build/
 release/
 debug/
 settings.json
+cmake-build-debug/
